@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb51cd487ee56940875a8a7c41236c1, type: 3}
   m_Name: EnemyFast
   m_EditorClassIdentifier: 
-  health: 10
+  maxHealth: 12
   damage: 1
-  moveSpeed: 3
+  moveSpeed: 4
   image: {fileID: 21300000, guid: 430df09ab982453469573c7ab47abb26, type: 3}
   type: Basic
+  round: 0
+  currentHealth: 0

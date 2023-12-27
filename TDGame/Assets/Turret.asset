@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acb51cd487ee56940875a8a7c41236c1, type: 3}
-  m_Name: EnemyTanky
+  m_Script: {fileID: 11500000, guid: dce473e53474bb7419e864f231381255, type: 3}
+  m_Name: Turret
   m_EditorClassIdentifier: 
-  maxHealth: 28
-  damage: 3
-  moveSpeed: 1.2
-  image: {fileID: 21300000, guid: 1ba749684ebad034e9bf84b0c65c1690, type: 3}
-  type: Basic
-  round: 0
-  currentHealth: 0
+  towerName: Turret
+  damage: 10
+  attackSpeed: 0
+  range: 4
+  fireRate: 1

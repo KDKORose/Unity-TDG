@@ -8,13 +8,25 @@ public class Enemy : MonoBehaviour
 {
 
     public EnemyScriptableObject enemyData;
+    private int currentHealth;
     public List<Transform> SpawnPointTransforms {get; set;}
+    public LayerMask layerMask;
 
-    public void TakeDamage() {
-        enemyData.health -= enemyData.damage;
-        if (enemyData.health <= 0) {
+    public void Awake() {
+        currentHealth = enemyData.maxHealth;
+    }
+
+    public int GetCurrentHealth() {
+        return currentHealth;
+    }
+
+    public void TakeDamage(int damage) {
+        currentHealth -= damage;
+        if (currentHealth <= 0) {
+            currentHealth = enemyData.maxHealth;
             Die();
         }
+        Debug.Log(currentHealth);
     }
 
     public void Die() {

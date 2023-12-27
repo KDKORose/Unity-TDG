@@ -7,6 +7,8 @@ TagManager:
   - Waypoint
   - SpawnpointManager
   - Spawner
+  - Enemy
+  - Tower
   layers:
   - Default
   - TransparentFX
